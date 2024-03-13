@@ -313,11 +313,11 @@ build StackImplementLL.exe: C_EXECUTABLE_LINKER__StackImplementLL_Debug CMakeFil
 
 build cmake_object_order_depends_target_QueueImplementArrayMENU: phony || CMakeFiles/QueueImplementArrayMENU.dir
 
-build CMakeFiles/QueueImplementArrayMENU.dir/Queue/QueueImplementArrayMENU.c.obj: C_COMPILER__QueueImplementArrayMENU_Debug D$:/C$ Practice/Practice/Queue/QueueImplementArrayMENU.c || cmake_object_order_depends_target_QueueImplementArrayMENU
-  DEP_FILE = CMakeFiles\QueueImplementArrayMENU.dir\Queue\QueueImplementArrayMENU.c.obj.d
+build CMakeFiles/QueueImplementArrayMENU.dir/Queue/Queue_Array/QueueImplementArrayMENU.c.obj: C_COMPILER__QueueImplementArrayMENU_Debug D$:/C$ Practice/Practice/Queue/Queue$ Array/QueueImplementArrayMENU.c || cmake_object_order_depends_target_QueueImplementArrayMENU
+  DEP_FILE = CMakeFiles\QueueImplementArrayMENU.dir\Queue\Queue_Array\QueueImplementArrayMENU.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\QueueImplementArrayMENU.dir
-  OBJECT_FILE_DIR = CMakeFiles\QueueImplementArrayMENU.dir\Queue
+  OBJECT_FILE_DIR = CMakeFiles\QueueImplementArrayMENU.dir\Queue\Queue_Array
 
 
 # =============================================================================
@@ -327,7 +327,7 @@ build CMakeFiles/QueueImplementArrayMENU.dir/Queue/QueueImplementArrayMENU.c.obj
 #############################################
 # Link the executable QueueImplementArrayMENU.exe
 
-build QueueImplementArrayMENU.exe: C_EXECUTABLE_LINKER__QueueImplementArrayMENU_Debug CMakeFiles/QueueImplementArrayMENU.dir/Queue/QueueImplementArrayMENU.c.obj
+build QueueImplementArrayMENU.exe: C_EXECUTABLE_LINKER__QueueImplementArrayMENU_Debug CMakeFiles/QueueImplementArrayMENU.dir/Queue/Queue_Array/QueueImplementArrayMENU.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QueueImplementArrayMENU.dir
@@ -346,11 +346,11 @@ build QueueImplementArrayMENU.exe: C_EXECUTABLE_LINKER__QueueImplementArrayMENU_
 
 build cmake_object_order_depends_target_QueueImplementLLMENU: phony || CMakeFiles/QueueImplementLLMENU.dir
 
-build CMakeFiles/QueueImplementLLMENU.dir/Queue/QueueImplementLLMENU.c.obj: C_COMPILER__QueueImplementLLMENU_Debug D$:/C$ Practice/Practice/Queue/QueueImplementLLMENU.c || cmake_object_order_depends_target_QueueImplementLLMENU
-  DEP_FILE = CMakeFiles\QueueImplementLLMENU.dir\Queue\QueueImplementLLMENU.c.obj.d
+build CMakeFiles/QueueImplementLLMENU.dir/Queue/Queue_LL/QueueImplementLLMENU.c.obj: C_COMPILER__QueueImplementLLMENU_Debug D$:/C$ Practice/Practice/Queue/Queue$ LL/QueueImplementLLMENU.c || cmake_object_order_depends_target_QueueImplementLLMENU
+  DEP_FILE = CMakeFiles\QueueImplementLLMENU.dir\Queue\Queue_LL\QueueImplementLLMENU.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\QueueImplementLLMENU.dir
-  OBJECT_FILE_DIR = CMakeFiles\QueueImplementLLMENU.dir\Queue
+  OBJECT_FILE_DIR = CMakeFiles\QueueImplementLLMENU.dir\Queue\Queue_LL
 
 
 # =============================================================================
@@ -360,7 +360,7 @@ build CMakeFiles/QueueImplementLLMENU.dir/Queue/QueueImplementLLMENU.c.obj: C_CO
 #############################################
 # Link the executable QueueImplementLLMENU.exe
 
-build QueueImplementLLMENU.exe: C_EXECUTABLE_LINKER__QueueImplementLLMENU_Debug CMakeFiles/QueueImplementLLMENU.dir/Queue/QueueImplementLLMENU.c.obj
+build QueueImplementLLMENU.exe: C_EXECUTABLE_LINKER__QueueImplementLLMENU_Debug CMakeFiles/QueueImplementLLMENU.dir/Queue/Queue_LL/QueueImplementLLMENU.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QueueImplementLLMENU.dir
@@ -369,6 +369,39 @@ build QueueImplementLLMENU.exe: C_EXECUTABLE_LINKER__QueueImplementLLMENU_Debug 
   TARGET_FILE = QueueImplementLLMENU.exe
   TARGET_IMPLIB = libQueueImplementLLMENU.dll.a
   TARGET_PDB = QueueImplementLLMENU.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Order-only phony target for CircularQueue
+
+build cmake_object_order_depends_target_CircularQueue: phony || CMakeFiles/CircularQueue.dir
+
+build CMakeFiles/CircularQueue.dir/Queue/Circular_Queue/MENU.c.obj: C_COMPILER__CircularQueue_Debug D$:/C$ Practice/Practice/Queue/Circular$ Queue/MENU.c || cmake_object_order_depends_target_CircularQueue
+  DEP_FILE = CMakeFiles\CircularQueue.dir\Queue\Circular_Queue\MENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\CircularQueue.dir\Queue\Circular_Queue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Link the executable CircularQueue.exe
+
+build CircularQueue.exe: C_EXECUTABLE_LINKER__CircularQueue_Debug CMakeFiles/CircularQueue.dir/Queue/Circular_Queue/MENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CircularQueue.exe
+  TARGET_IMPLIB = libCircularQueue.dll.a
+  TARGET_PDB = CircularQueue.exe.dbg
 
 
 #############################################
@@ -398,6 +431,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build ArrayImplement: phony ArrayImplement.exe
 
+build CircularQueue: phony CircularQueue.exe
+
 build Fibonacci: phony Fibonacci.exe
 
 build LLImplement: phony LLImplement.exe
@@ -424,7 +459,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueImplementArrayMENU.exe QueueImplementLLMENU.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueImplementArrayMENU.exe QueueImplementLLMENU.exe CircularQueue.exe
 
 # =============================================================================
 # Built-in targets

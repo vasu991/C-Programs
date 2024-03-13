@@ -8,5 +8,6 @@ D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementMenu.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementLL.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/QueueImplementArrayMENU.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/QueueImplementLLMENU.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/CircularQueue.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
