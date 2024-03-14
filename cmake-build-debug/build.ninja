@@ -436,6 +436,39 @@ build ProcessorMENU.exe: C_EXECUTABLE_LINKER__ProcessorMENU_Debug CMakeFiles/Pro
   TARGET_IMPLIB = libProcessorMENU.dll.a
   TARGET_PDB = ProcessorMENU.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target DoublyLL
+
+
+#############################################
+# Order-only phony target for DoublyLL
+
+build cmake_object_order_depends_target_DoublyLL: phony || CMakeFiles/DoublyLL.dir
+
+build CMakeFiles/DoublyLL.dir/LinkedList/Doubly_Linked_List/Doubly_Linked_List_MENU.c.obj: C_COMPILER__DoublyLL_Debug D$:/C$ Practice/Practice/LinkedList/Doubly$ Linked$ List/Doubly$ Linked$ List$ MENU.c || cmake_object_order_depends_target_DoublyLL
+  DEP_FILE = CMakeFiles\DoublyLL.dir\LinkedList\Doubly_Linked_List\Doubly_Linked_List_MENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\DoublyLL.dir
+  OBJECT_FILE_DIR = CMakeFiles\DoublyLL.dir\LinkedList\Doubly_Linked_List
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DoublyLL
+
+
+#############################################
+# Link the executable DoublyLL.exe
+
+build DoublyLL.exe: C_EXECUTABLE_LINKER__DoublyLL_Debug CMakeFiles/DoublyLL.dir/LinkedList/Doubly_Linked_List/Doubly_Linked_List_MENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\DoublyLL.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = DoublyLL.exe
+  TARGET_IMPLIB = libDoublyLL.dll.a
+  TARGET_PDB = DoublyLL.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -466,6 +499,8 @@ build ArrayImplement: phony ArrayImplement.exe
 
 build CircularQueue: phony CircularQueue.exe
 
+build DoublyLL: phony DoublyLL.exe
+
 build Fibonacci: phony Fibonacci.exe
 
 build LLImplement: phony LLImplement.exe
@@ -494,7 +529,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe
 
 # =============================================================================
 # Built-in targets
