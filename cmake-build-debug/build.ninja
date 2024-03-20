@@ -214,11 +214,11 @@ build ArrayImplement.exe: C_EXECUTABLE_LINKER__ArrayImplement_Debug CMakeFiles/A
 
 build cmake_object_order_depends_target_LLImplement: phony || CMakeFiles/LLImplement.dir
 
-build CMakeFiles/LLImplement.dir/LinkedList/ListImplementMenu.c.obj: C_COMPILER__LLImplement_Debug D$:/C$ Practice/Practice/LinkedList/ListImplementMenu.c || cmake_object_order_depends_target_LLImplement
-  DEP_FILE = CMakeFiles\LLImplement.dir\LinkedList\ListImplementMenu.c.obj.d
+build CMakeFiles/LLImplement.dir/LinkedList/Singly_Linked_List/ListImplementMenu.c.obj: C_COMPILER__LLImplement_Debug D$:/C$ Practice/Practice/LinkedList/Singly$ Linked$ List/ListImplementMenu.c || cmake_object_order_depends_target_LLImplement
+  DEP_FILE = CMakeFiles\LLImplement.dir\LinkedList\Singly_Linked_List\ListImplementMenu.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\LLImplement.dir
-  OBJECT_FILE_DIR = CMakeFiles\LLImplement.dir\LinkedList
+  OBJECT_FILE_DIR = CMakeFiles\LLImplement.dir\LinkedList\Singly_Linked_List
 
 
 # =============================================================================
@@ -228,7 +228,7 @@ build CMakeFiles/LLImplement.dir/LinkedList/ListImplementMenu.c.obj: C_COMPILER_
 #############################################
 # Link the executable LLImplement.exe
 
-build LLImplement.exe: C_EXECUTABLE_LINKER__LLImplement_Debug CMakeFiles/LLImplement.dir/LinkedList/ListImplementMenu.c.obj
+build LLImplement.exe: C_EXECUTABLE_LINKER__LLImplement_Debug CMakeFiles/LLImplement.dir/LinkedList/Singly_Linked_List/ListImplementMenu.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LLImplement.dir
