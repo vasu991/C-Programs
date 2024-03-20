@@ -53,6 +53,86 @@ void insert(List* list, int info) {
     }
 }
 
+void insertAscending(List* list, int info) {
+    Node* node = createNode();
+    if(node == NULL) {
+        printf("Memory OVERFLOW.\n");
+        return;
+    }
+    node->info = info;
+    if(isEmpty(list)) {
+        list->left = node;
+        list->right = node;
+    }
+    else {
+        if(info < list->left->info) {
+            node->next = list->left;
+            list->left->prev = node;
+            list->left = node;
+        }
+        else if(info > list->right->info) {
+            node->prev = list->right;
+            list->right->next = node;
+            list->right = node;
+        }
+        else {
+            Node* temp = list->left;
+            while(temp->info < info) {
+                temp = temp->next;
+            }
+            node->prev = temp;
+            node->next = temp->next;
+            (temp->next)->prev = node;
+            temp->next = node;
+        }
+    }
+}
+
+int delete(List* list, int key) {
+    if(list->left == NULL) {
+        printf("List is empty!!\n");
+        return -1;
+    }
+
+    Node* temp = list->left;
+
+    while((temp != NULL) && (key != temp->info))
+        temp = temp->next;
+    if(temp == NULL) {
+        printf("Key not found!\n");
+        return -1;
+    }
+
+    int info;
+
+    if((temp->prev == NULL) && (temp->next == NULL)) {
+        info = temp->info;
+        free(temp);
+        list->left = NULL;
+        list->right = NULL;
+        return info;
+    }
+    if(temp == list->left) {
+        info = temp->info;
+        list->left = list->left->next;
+        list->left->prev = NULL;
+        free(temp);
+        return info;
+    }
+    if(temp->next == NULL) {
+        info = temp->info;
+        list->right = list->right->prev;
+        list->right->next = NULL;
+        free(temp);
+        return info;
+    }
+    info = temp->info;
+    temp->prev->next = temp->next;
+    temp->next->prev = temp->prev;
+    free(temp);
+    return info;
+}
+
 void displayRightToLeft(List* list) {
     Node* temp = list->right;
     if(isEmpty(list)) {
