@@ -56,7 +56,7 @@ int main() {
         }
 
     } while(n != 5);
-
+    Node* ptr =
     return 0;
 }
 #pragma clang diagnostic pop

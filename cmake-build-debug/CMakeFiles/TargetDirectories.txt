@@ -11,5 +11,7 @@ D:/C Practice/Practice/cmake-build-debug/CMakeFiles/QueueLLMENU.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/CircularQueue.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/ProcessorMENU.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/DoublyLL.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/SimpleBinaryTree.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/Polynomial.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

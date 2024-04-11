@@ -469,6 +469,72 @@ build DoublyLL.exe: C_EXECUTABLE_LINKER__DoublyLL_Debug CMakeFiles/DoublyLL.dir/
   TARGET_IMPLIB = libDoublyLL.dll.a
   TARGET_PDB = DoublyLL.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target SimpleBinaryTree
+
+
+#############################################
+# Order-only phony target for SimpleBinaryTree
+
+build cmake_object_order_depends_target_SimpleBinaryTree: phony || CMakeFiles/SimpleBinaryTree.dir
+
+build CMakeFiles/SimpleBinaryTree.dir/Tree/BinaryTree/Main.c.obj: C_COMPILER__SimpleBinaryTree_Debug D$:/C$ Practice/Practice/Tree/BinaryTree/Main.c || cmake_object_order_depends_target_SimpleBinaryTree
+  DEP_FILE = CMakeFiles\SimpleBinaryTree.dir\Tree\BinaryTree\Main.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\SimpleBinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleBinaryTree.dir\Tree\BinaryTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SimpleBinaryTree
+
+
+#############################################
+# Link the executable SimpleBinaryTree.exe
+
+build SimpleBinaryTree.exe: C_EXECUTABLE_LINKER__SimpleBinaryTree_Debug CMakeFiles/SimpleBinaryTree.dir/Tree/BinaryTree/Main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\SimpleBinaryTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = SimpleBinaryTree.exe
+  TARGET_IMPLIB = libSimpleBinaryTree.dll.a
+  TARGET_PDB = SimpleBinaryTree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Polynomial
+
+
+#############################################
+# Order-only phony target for Polynomial
+
+build cmake_object_order_depends_target_Polynomial: phony || CMakeFiles/Polynomial.dir
+
+build CMakeFiles/Polynomial.dir/LinkedList/Add_Polynomials/Main.c.obj: C_COMPILER__Polynomial_Debug D$:/C$ Practice/Practice/LinkedList/Add$ Polynomials/Main.c || cmake_object_order_depends_target_Polynomial
+  DEP_FILE = CMakeFiles\Polynomial.dir\LinkedList\Add_Polynomials\Main.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Polynomial.dir
+  OBJECT_FILE_DIR = CMakeFiles\Polynomial.dir\LinkedList\Add_Polynomials
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Polynomial
+
+
+#############################################
+# Link the executable Polynomial.exe
+
+build Polynomial.exe: C_EXECUTABLE_LINKER__Polynomial_Debug CMakeFiles/Polynomial.dir/LinkedList/Add_Polynomials/Main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Polynomial.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Polynomial.exe
+  TARGET_IMPLIB = libPolynomial.dll.a
+  TARGET_PDB = Polynomial.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -507,11 +573,15 @@ build LLImplement: phony LLImplement.exe
 
 build Main: phony Main.exe
 
+build Polynomial: phony Polynomial.exe
+
 build ProcessorMENU: phony ProcessorMENU.exe
 
 build QueueArrayMENU: phony QueueArrayMENU.exe
 
 build QueueLLMENU: phony QueueLLMENU.exe
+
+build SimpleBinaryTree: phony SimpleBinaryTree.exe
 
 build StackImplementLL: phony StackImplementLL.exe
 
@@ -529,7 +599,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe
 
 # =============================================================================
 # Built-in targets

@@ -16,4 +16,6 @@ add_executable(QueueLLMENU "Queue/Queue LL/QueueImplementLLMENU.c")
 add_executable(CircularQueue "Queue/Circular Queue/CircularQueueImplementMENU.c")
 add_executable(ProcessorMENU "Queue/Multi Processor/ProcessorMENU.c")
 add_executable(DoublyLL "LinkedList/Doubly Linked List/Doubly Linked List MENU.c")
+add_executable(SimpleBinaryTree "Tree/BinaryTree/Main.c")
+add_executable(Polynomial "LinkedList/Add Polynomials/Main.c")
 

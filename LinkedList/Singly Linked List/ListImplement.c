@@ -4,6 +4,19 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
+typedef struct List {
+  Node* left;
+  Node* right;
+} List;
+
+List* createList() {
+    List* list = (List*) malloc(sizeof(List));
+    list->left = NULL;
+    list->right = NULL;
+    return list;
+}
+
+
 void append(Node** left, Node** right, int info)
 {
 
@@ -20,6 +33,30 @@ void append(Node** left, Node** right, int info)
 
     (*right)->next = new_node;
     *right = new_node;
+}
+
+void deleteSecondLast(Node* ptr) {
+    Node* temp = ptr;
+    Node* prev = NULL;
+    if(temp->next == NULL) {
+        printf("Only One Node. Can not DELETE Second Last..\n");
+        return;
+    }
+    while(temp->next->next != NULL) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if(prev == NULL) {
+        prev = temp;
+        ptr = ptr->next;
+        free(prev);
+    }
+
+    else {
+        prev->next = temp->next;
+        free(temp);
+    }
 }
 
 int deleteByValue(Node** left, Node** right, int key) {
@@ -66,6 +103,52 @@ int deleteByValue(Node** left, Node** right, int key) {
     free(temp);
     return deleted;
 }
+
+List* connectLists(List* list1, List* list2) {
+    Node* temp1 = list1->left;
+    Node* temp2 = list2->left;
+
+    List* new_list = (List*) malloc(sizeof(List));
+
+    new_list->left = NULL;
+
+    Node* current = NULL;
+
+    while (temp1 != NULL) {
+        Node* node = (Node*)malloc(sizeof(Node));
+        node->info = temp1->info;
+        node->next = NULL;
+
+        if (new_list->left == NULL) {
+            new_list->left = node;
+            current = node;
+        } else {
+            current->next = node;
+            current = current->next;
+        }
+        temp1 = temp1->next;
+    }
+
+    while (temp2 != NULL) {
+        Node* node = (Node*)malloc(sizeof(Node));
+        node->info = temp2->info;
+        node->next = NULL;
+
+        if (new_list->left == NULL) {
+            new_list->left = node;
+            current = node;
+        } else {
+            current->next = node;
+            current = current->next;
+        }
+        if(temp2->next == NULL) {
+            new_list->right = temp2;
+        }
+        temp2 = temp2->next;
+    }
+    return new_list;
+}
+
 
 void insertAscending(Node** left, Node** right, int info) {
     Node* node = (Node*) malloc(sizeof(Node));
