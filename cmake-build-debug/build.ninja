@@ -535,6 +535,39 @@ build Polynomial.exe: C_EXECUTABLE_LINKER__Polynomial_Debug CMakeFiles/Polynomia
   TARGET_IMPLIB = libPolynomial.dll.a
   TARGET_PDB = Polynomial.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target SimpleGraph
+
+
+#############################################
+# Order-only phony target for SimpleGraph
+
+build cmake_object_order_depends_target_SimpleGraph: phony || CMakeFiles/SimpleGraph.dir
+
+build CMakeFiles/SimpleGraph.dir/Graphs/MENU.c.obj: C_COMPILER__SimpleGraph_Debug D$:/C$ Practice/Practice/Graphs/MENU.c || cmake_object_order_depends_target_SimpleGraph
+  DEP_FILE = CMakeFiles\SimpleGraph.dir\Graphs\MENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\SimpleGraph.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGraph.dir\Graphs
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SimpleGraph
+
+
+#############################################
+# Link the executable SimpleGraph.exe
+
+build SimpleGraph.exe: C_EXECUTABLE_LINKER__SimpleGraph_Debug CMakeFiles/SimpleGraph.dir/Graphs/MENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\SimpleGraph.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = SimpleGraph.exe
+  TARGET_IMPLIB = libSimpleGraph.dll.a
+  TARGET_PDB = SimpleGraph.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -583,6 +616,8 @@ build QueueLLMENU: phony QueueLLMENU.exe
 
 build SimpleBinaryTree: phony SimpleBinaryTree.exe
 
+build SimpleGraph: phony SimpleGraph.exe
+
 build StackImplementLL: phony StackImplementLL.exe
 
 build StackImplementMenu: phony StackImplementMenu.exe
@@ -599,7 +634,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe SimpleGraph.exe
 
 # =============================================================================
 # Built-in targets
