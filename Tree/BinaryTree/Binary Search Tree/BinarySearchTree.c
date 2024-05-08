@@ -6,6 +6,7 @@
 
 #include<stdlib.h>
 #include<stdio.h>
+#define COUNT 8
 
 typedef struct Node {
     int info;
@@ -26,21 +27,20 @@ Node* createNode(int info) {
 }
 
 Tree* createTree() {
-    Tree* tree = (Tree*)malloc(sizeof(Tree));\
+    Tree* tree = (Tree*)malloc(sizeof(Tree));
     tree->root = NULL;
     return tree;
 }
 void insertBST(Node** root, int key) {
-    if(*root == NULL) {
+    if (*root == NULL) {
         *root = createNode(key);
-        (*root)->info = key;
         return;
     }
-
-    if((*root)->info < key) {
-        insertBST(&((*root)->right), key);
-    } else {
+    if (key < (*root)->info) {
         insertBST(&((*root)->left), key);
+    }
+    else if (key > (*root)->info) {
+        insertBST(&((*root)->right), key);
     }
 }
 
@@ -50,14 +50,45 @@ int countNodes(Node* root){
     return 1 + countNodes(root->left) + countNodes(root->right);
 }
 
-void printTree(Node* root, int level) {
+void print2DUtil(Node* root, int space)
+{
     if (root == NULL)
         return;
-    printTree(root->right, level + 1);
-    for (int i = 0; i < level; i++)
-        printf("   ");
+
+    space += COUNT;
+
+    print2DUtil(root->right, space);
+
+    printf("\n");
+    for (int i = COUNT; i < space; i++)
+        printf(" ");
     printf("%d\n", root->info);
-    printTree(root->left, level + 1);
+
+    print2DUtil(root->left, space);
+}
+void print2D(struct Node* root)
+{
+    print2DUtil(root, 0);
+}
+
+int countLeafNodes(Node* root) {
+    if(root == NULL)
+        return 0;
+    if(root->left == NULL && root->right==NULL)
+        return 1;
+    else
+        return countLeafNodes(root->left)+
+               countLeafNodes(root->right);
+}
+
+int countLeftChildNodes(Node* root) {
+    if(root == NULL)
+        return 0;
+    if(root->left != NULL && root->right == NULL)
+        return 1;
+    else
+        return countLeftChildNodes(root->left)+
+               countLeftChildNodes(root->right);
 }
 
 
