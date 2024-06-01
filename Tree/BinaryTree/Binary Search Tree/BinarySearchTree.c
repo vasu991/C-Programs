@@ -91,6 +91,21 @@ int countLeftChildNodes(Node* root) {
                countLeftChildNodes(root->right);
 }
 
+void rangeSumBST(Node* root, int low, int high, int* sum) {
+    if(root == NULL) {
+        return;
+    }
+
+    rangeSumBST(root->left, low, high, sum);
+
+    if (root->left->info >= low && root->right->info <= high) {
+        *sum += root->info;
+    }
+
+    rangeSumBST(root->right, low, high, sum);
+}
+
+
 
 void preOrder(Node* node) {
     if(node == NULL) {

@@ -9,8 +9,8 @@ typedef struct Node {
 } Node;
 
 typedef struct List {
-    Node* left;
-    Node* right;
+    Node* start;
+    Node* end;
 } List;
 
 Node* createNode() {
@@ -22,12 +22,12 @@ Node* createNode() {
 
 List* createList() {
     List* list = (List*) malloc(sizeof(List));
-    list->left = NULL;
-    list->right = NULL;
+    list->start = NULL;
+    list->end = NULL;
     return list;
 }
 bool isEmpty(List* list) {
-    if(list->left == NULL) {
+    if(list->start == NULL) {
         return true;
     }
     else {
@@ -43,13 +43,13 @@ void insert(List* list, int info) {
     }
     node->info = info;
     if(isEmpty(list)) {
-        list->left = node;
-        list->right = node;
+        list->start = node;
+        list->end = node;
     }
     else {
-        list->right->next = node;
-        node->prev = list->right;
-        list->right = node;
+        list->end->next = node;
+        node->prev = list->end;
+        list->end = node;
     }
 }
 
@@ -61,22 +61,22 @@ void insertAscending(List* list, int info) {
     }
     node->info = info;
     if(isEmpty(list)) {
-        list->left = node;
-        list->right = node;
+        list->start = node;
+        list->end = node;
     }
     else {
-        if(info < list->left->info) {
-            node->next = list->left;
-            list->left->prev = node;
-            list->left = node;
+        if(info < list->start->info) {
+            node->next = list->start;
+            list->start->prev = node;
+            list->start = node;
         }
-        else if(info > list->right->info) {
-            node->prev = list->right;
-            list->right->next = node;
-            list->right = node;
+        else if(info > list->end->info) {
+            node->prev = list->end;
+            list->end->next = node;
+            list->end = node;
         }
         else {
-            Node* temp = list->left;
+            Node* temp = list->start;
             while(temp->info < info) {
                 temp = temp->next;
             }
@@ -89,12 +89,12 @@ void insertAscending(List* list, int info) {
 }
 
 int delete(List* list, int key) {
-    if(list->left == NULL) {
+    if(list->start == NULL) {
         printf("List is empty!!\n");
         return -1;
     }
 
-    Node* temp = list->left;
+    Node* temp = list->start;
 
     while((temp != NULL) && (key != temp->info))
         temp = temp->next;
@@ -108,21 +108,21 @@ int delete(List* list, int key) {
     if((temp->prev == NULL) && (temp->next == NULL)) {
         info = temp->info;
         free(temp);
-        list->left = NULL;
-        list->right = NULL;
+        list->start = NULL;
+        list->end = NULL;
         return info;
     }
-    if(temp == list->left) {
+    if(temp == list->start) {
         info = temp->info;
-        list->left = list->left->next;
-        list->left->prev = NULL;
+        list->start = list->start->next;
+        list->start->prev = NULL;
         free(temp);
         return info;
     }
     if(temp->next == NULL) {
         info = temp->info;
-        list->right = list->right->prev;
-        list->right->next = NULL;
+        list->end = list->end->prev;
+        list->end->next = NULL;
         free(temp);
         return info;
     }
@@ -134,7 +134,7 @@ int delete(List* list, int key) {
 }
 
 void displayRightToLeft(List* list) {
-    Node* temp = list->right;
+    Node* temp = list->end;
     if(isEmpty(list)) {
         printf("List is EMPTY.\n");
     }
@@ -151,7 +151,7 @@ void displayRightToLeft(List* list) {
 }
 
 void displayLeftToRight(List* list) {
-    Node* temp = list->left;
+    Node* temp = list->start;
     if(isEmpty(list)) {
         printf("List is EMPTY.\n");
     }

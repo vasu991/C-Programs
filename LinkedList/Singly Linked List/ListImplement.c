@@ -5,15 +5,20 @@ typedef struct Node {
 } Node;
 
 typedef struct List {
-  Node* left;
-  Node* right;
+  Node* start;
+  Node* end;
 } List;
 
 List* createList() {
     List* list = (List*) malloc(sizeof(List));
-    list->left = NULL;
-    list->right = NULL;
+    list->start = NULL;
+    list->end = NULL;
     return list;
+}
+
+Node* createNode() {
+    Node* node = (Node*)malloc(sizeof(Node));
+    return node;
 }
 
 
@@ -103,14 +108,32 @@ int deleteByValue(Node** left, Node** right, int key) {
     free(temp);
     return deleted;
 }
+void swap(int* a, int* b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void pairWiseSwap(Node* head)
+{
+    Node* temp = head;
+
+    while (temp != NULL && temp->next != NULL) {
+        swap(&temp->info, &temp->next->info);
+        temp = temp->next->next;
+    }
+}
+
 
 List* connectLists(List* list1, List* list2) {
-    Node* temp1 = list1->left;
-    Node* temp2 = list2->left;
+    Node* temp1 = list1->start;
+    Node* temp2 = list2->start;
 
     List* new_list = (List*) malloc(sizeof(List));
 
-    new_list->left = NULL;
+    new_list->start = NULL;
 
     Node* current = NULL;
 
@@ -119,8 +142,8 @@ List* connectLists(List* list1, List* list2) {
         node->info = temp1->info;
         node->next = NULL;
 
-        if (new_list->left == NULL) {
-            new_list->left = node;
+        if (new_list->start == NULL) {
+            new_list->start = node;
             current = node;
         } else {
             current->next = node;
@@ -134,15 +157,15 @@ List* connectLists(List* list1, List* list2) {
         node->info = temp2->info;
         node->next = NULL;
 
-        if (new_list->left == NULL) {
-            new_list->left = node;
+        if (new_list->start == NULL) {
+            new_list->start = node;
             current = node;
         } else {
             current->next = node;
             current = current->next;
         }
         if(temp2->next == NULL) {
-            new_list->right = temp2;
+            new_list->end = temp2;
         }
         temp2 = temp2->next;
     }

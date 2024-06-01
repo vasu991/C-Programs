@@ -41,6 +41,435 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/C$ Practice/Practice/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target Main
+
+
+#############################################
+# Order-only phony target for Main
+
+build cmake_object_order_depends_target_Main: phony || CMakeFiles/Main.dir
+
+build CMakeFiles/Main.dir/main.c.obj: C_COMPILER__Main_Debug D$:/C$ Practice/Practice/main.c || cmake_object_order_depends_target_Main
+  DEP_FILE = CMakeFiles\Main.dir\main.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = CMakeFiles\Main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Main
+
+
+#############################################
+# Link the executable Main.exe
+
+build Main.exe: C_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Main.exe
+  TARGET_IMPLIB = libMain.dll.a
+  TARGET_PDB = Main.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Table
+
+
+#############################################
+# Order-only phony target for Table
+
+build cmake_object_order_depends_target_Table: phony || CMakeFiles/Table.dir
+
+build CMakeFiles/Table.dir/Recursion/table.c.obj: C_COMPILER__Table_Debug D$:/C$ Practice/Practice/Recursion/table.c || cmake_object_order_depends_target_Table
+  DEP_FILE = CMakeFiles\Table.dir\Recursion\table.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Table.dir
+  OBJECT_FILE_DIR = CMakeFiles\Table.dir\Recursion
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Table
+
+
+#############################################
+# Link the executable Table.exe
+
+build Table.exe: C_EXECUTABLE_LINKER__Table_Debug CMakeFiles/Table.dir/Recursion/table.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Table.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Table.exe
+  TARGET_IMPLIB = libTable.dll.a
+  TARGET_PDB = Table.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Fibonacci
+
+
+#############################################
+# Order-only phony target for Fibonacci
+
+build cmake_object_order_depends_target_Fibonacci: phony || CMakeFiles/Fibonacci.dir
+
+build CMakeFiles/Fibonacci.dir/Recursion/fibonacci.c.obj: C_COMPILER__Fibonacci_Debug D$:/C$ Practice/Practice/Recursion/fibonacci.c || cmake_object_order_depends_target_Fibonacci
+  DEP_FILE = CMakeFiles\Fibonacci.dir\Recursion\fibonacci.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Fibonacci.dir
+  OBJECT_FILE_DIR = CMakeFiles\Fibonacci.dir\Recursion
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Fibonacci
+
+
+#############################################
+# Link the executable Fibonacci.exe
+
+build Fibonacci.exe: C_EXECUTABLE_LINKER__Fibonacci_Debug CMakeFiles/Fibonacci.dir/Recursion/fibonacci.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Fibonacci.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Fibonacci.exe
+  TARGET_IMPLIB = libFibonacci.dll.a
+  TARGET_PDB = Fibonacci.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target reverseArray
+
+
+#############################################
+# Order-only phony target for reverseArray
+
+build cmake_object_order_depends_target_reverseArray: phony || CMakeFiles/reverseArray.dir
+
+build CMakeFiles/reverseArray.dir/Recursion/reverseArray.c.obj: C_COMPILER__reverseArray_Debug D$:/C$ Practice/Practice/Recursion/reverseArray.c || cmake_object_order_depends_target_reverseArray
+  DEP_FILE = CMakeFiles\reverseArray.dir\Recursion\reverseArray.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\reverseArray.dir
+  OBJECT_FILE_DIR = CMakeFiles\reverseArray.dir\Recursion
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target reverseArray
+
+
+#############################################
+# Link the executable reverseArray.exe
+
+build reverseArray.exe: C_EXECUTABLE_LINKER__reverseArray_Debug CMakeFiles/reverseArray.dir/Recursion/reverseArray.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\reverseArray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = reverseArray.exe
+  TARGET_IMPLIB = libreverseArray.dll.a
+  TARGET_PDB = reverseArray.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ArrayImplement
+
+
+#############################################
+# Order-only phony target for ArrayImplement
+
+build cmake_object_order_depends_target_ArrayImplement: phony || CMakeFiles/ArrayImplement.dir
+
+build CMakeFiles/ArrayImplement.dir/Array/ArrayImplement.c.obj: C_COMPILER__ArrayImplement_Debug D$:/C$ Practice/Practice/Array/ArrayImplement.c || cmake_object_order_depends_target_ArrayImplement
+  DEP_FILE = CMakeFiles\ArrayImplement.dir\Array\ArrayImplement.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\ArrayImplement.dir
+  OBJECT_FILE_DIR = CMakeFiles\ArrayImplement.dir\Array
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ArrayImplement
+
+
+#############################################
+# Link the executable ArrayImplement.exe
+
+build ArrayImplement.exe: C_EXECUTABLE_LINKER__ArrayImplement_Debug CMakeFiles/ArrayImplement.dir/Array/ArrayImplement.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ArrayImplement.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ArrayImplement.exe
+  TARGET_IMPLIB = libArrayImplement.dll.a
+  TARGET_PDB = ArrayImplement.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LLImplement
+
+
+#############################################
+# Order-only phony target for LLImplement
+
+build cmake_object_order_depends_target_LLImplement: phony || CMakeFiles/LLImplement.dir
+
+build CMakeFiles/LLImplement.dir/LinkedList/Singly_Linked_List/ListImplementMenu.c.obj: C_COMPILER__LLImplement_Debug D$:/C$ Practice/Practice/LinkedList/Singly$ Linked$ List/ListImplementMenu.c || cmake_object_order_depends_target_LLImplement
+  DEP_FILE = CMakeFiles\LLImplement.dir\LinkedList\Singly_Linked_List\ListImplementMenu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\LLImplement.dir
+  OBJECT_FILE_DIR = CMakeFiles\LLImplement.dir\LinkedList\Singly_Linked_List
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LLImplement
+
+
+#############################################
+# Link the executable LLImplement.exe
+
+build LLImplement.exe: C_EXECUTABLE_LINKER__LLImplement_Debug CMakeFiles/LLImplement.dir/LinkedList/Singly_Linked_List/ListImplementMenu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LLImplement.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LLImplement.exe
+  TARGET_IMPLIB = libLLImplement.dll.a
+  TARGET_PDB = LLImplement.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StackImplementMenu
+
+
+#############################################
+# Order-only phony target for StackImplementMenu
+
+build cmake_object_order_depends_target_StackImplementMenu: phony || CMakeFiles/StackImplementMenu.dir
+
+build CMakeFiles/StackImplementMenu.dir/Stack/StackImplementMenu.c.obj: C_COMPILER__StackImplementMenu_Debug D$:/C$ Practice/Practice/Stack/StackImplementMenu.c || cmake_object_order_depends_target_StackImplementMenu
+  DEP_FILE = CMakeFiles\StackImplementMenu.dir\Stack\StackImplementMenu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\StackImplementMenu.dir
+  OBJECT_FILE_DIR = CMakeFiles\StackImplementMenu.dir\Stack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StackImplementMenu
+
+
+#############################################
+# Link the executable StackImplementMenu.exe
+
+build StackImplementMenu.exe: C_EXECUTABLE_LINKER__StackImplementMenu_Debug CMakeFiles/StackImplementMenu.dir/Stack/StackImplementMenu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\StackImplementMenu.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = StackImplementMenu.exe
+  TARGET_IMPLIB = libStackImplementMenu.dll.a
+  TARGET_PDB = StackImplementMenu.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StackImplementLL
+
+
+#############################################
+# Order-only phony target for StackImplementLL
+
+build cmake_object_order_depends_target_StackImplementLL: phony || CMakeFiles/StackImplementLL.dir
+
+build CMakeFiles/StackImplementLL.dir/Stack/StackUsingLL.c.obj: C_COMPILER__StackImplementLL_Debug D$:/C$ Practice/Practice/Stack/StackUsingLL.c || cmake_object_order_depends_target_StackImplementLL
+  DEP_FILE = CMakeFiles\StackImplementLL.dir\Stack\StackUsingLL.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\StackImplementLL.dir
+  OBJECT_FILE_DIR = CMakeFiles\StackImplementLL.dir\Stack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StackImplementLL
+
+
+#############################################
+# Link the executable StackImplementLL.exe
+
+build StackImplementLL.exe: C_EXECUTABLE_LINKER__StackImplementLL_Debug CMakeFiles/StackImplementLL.dir/Stack/StackUsingLL.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\StackImplementLL.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = StackImplementLL.exe
+  TARGET_IMPLIB = libStackImplementLL.dll.a
+  TARGET_PDB = StackImplementLL.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target QueueArrayMENU
+
+
+#############################################
+# Order-only phony target for QueueArrayMENU
+
+build cmake_object_order_depends_target_QueueArrayMENU: phony || CMakeFiles/QueueArrayMENU.dir
+
+build CMakeFiles/QueueArrayMENU.dir/Queue/Queue_Array/QueueImplementArrayMENU.c.obj: C_COMPILER__QueueArrayMENU_Debug D$:/C$ Practice/Practice/Queue/Queue$ Array/QueueImplementArrayMENU.c || cmake_object_order_depends_target_QueueArrayMENU
+  DEP_FILE = CMakeFiles\QueueArrayMENU.dir\Queue\Queue_Array\QueueImplementArrayMENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\QueueArrayMENU.dir
+  OBJECT_FILE_DIR = CMakeFiles\QueueArrayMENU.dir\Queue\Queue_Array
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target QueueArrayMENU
+
+
+#############################################
+# Link the executable QueueArrayMENU.exe
+
+build QueueArrayMENU.exe: C_EXECUTABLE_LINKER__QueueArrayMENU_Debug CMakeFiles/QueueArrayMENU.dir/Queue/Queue_Array/QueueImplementArrayMENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\QueueArrayMENU.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = QueueArrayMENU.exe
+  TARGET_IMPLIB = libQueueArrayMENU.dll.a
+  TARGET_PDB = QueueArrayMENU.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target QueueLLMENU
+
+
+#############################################
+# Order-only phony target for QueueLLMENU
+
+build cmake_object_order_depends_target_QueueLLMENU: phony || CMakeFiles/QueueLLMENU.dir
+
+build CMakeFiles/QueueLLMENU.dir/Queue/Queue_LL/QueueImplementLLMENU.c.obj: C_COMPILER__QueueLLMENU_Debug D$:/C$ Practice/Practice/Queue/Queue$ LL/QueueImplementLLMENU.c || cmake_object_order_depends_target_QueueLLMENU
+  DEP_FILE = CMakeFiles\QueueLLMENU.dir\Queue\Queue_LL\QueueImplementLLMENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\QueueLLMENU.dir
+  OBJECT_FILE_DIR = CMakeFiles\QueueLLMENU.dir\Queue\Queue_LL
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target QueueLLMENU
+
+
+#############################################
+# Link the executable QueueLLMENU.exe
+
+build QueueLLMENU.exe: C_EXECUTABLE_LINKER__QueueLLMENU_Debug CMakeFiles/QueueLLMENU.dir/Queue/Queue_LL/QueueImplementLLMENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\QueueLLMENU.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = QueueLLMENU.exe
+  TARGET_IMPLIB = libQueueLLMENU.dll.a
+  TARGET_PDB = QueueLLMENU.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Order-only phony target for CircularQueue
+
+build cmake_object_order_depends_target_CircularQueue: phony || CMakeFiles/CircularQueue.dir
+
+build CMakeFiles/CircularQueue.dir/Queue/Circular_Queue/CircularQueueImplementMENU.c.obj: C_COMPILER__CircularQueue_Debug D$:/C$ Practice/Practice/Queue/Circular$ Queue/CircularQueueImplementMENU.c || cmake_object_order_depends_target_CircularQueue
+  DEP_FILE = CMakeFiles\CircularQueue.dir\Queue\Circular_Queue\CircularQueueImplementMENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\CircularQueue.dir\Queue\Circular_Queue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Link the executable CircularQueue.exe
+
+build CircularQueue.exe: C_EXECUTABLE_LINKER__CircularQueue_Debug CMakeFiles/CircularQueue.dir/Queue/Circular_Queue/CircularQueueImplementMENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CircularQueue.exe
+  TARGET_IMPLIB = libCircularQueue.dll.a
+  TARGET_PDB = CircularQueue.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ProcessorMENU
+
+
+#############################################
+# Order-only phony target for ProcessorMENU
+
+build cmake_object_order_depends_target_ProcessorMENU: phony || CMakeFiles/ProcessorMENU.dir
+
+build CMakeFiles/ProcessorMENU.dir/Queue/Multi_Processor/ProcessorMENU.c.obj: C_COMPILER__ProcessorMENU_Debug D$:/C$ Practice/Practice/Queue/Multi$ Processor/ProcessorMENU.c || cmake_object_order_depends_target_ProcessorMENU
+  DEP_FILE = CMakeFiles\ProcessorMENU.dir\Queue\Multi_Processor\ProcessorMENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\ProcessorMENU.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProcessorMENU.dir\Queue\Multi_Processor
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ProcessorMENU
+
+
+#############################################
+# Link the executable ProcessorMENU.exe
+
+build ProcessorMENU.exe: C_EXECUTABLE_LINKER__ProcessorMENU_Debug CMakeFiles/ProcessorMENU.dir/Queue/Multi_Processor/ProcessorMENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ProcessorMENU.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ProcessorMENU.exe
+  TARGET_IMPLIB = libProcessorMENU.dll.a
+  TARGET_PDB = ProcessorMENU.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target DoublyLL
+
+
+#############################################
+# Order-only phony target for DoublyLL
+
+build cmake_object_order_depends_target_DoublyLL: phony || CMakeFiles/DoublyLL.dir
+
+build CMakeFiles/DoublyLL.dir/LinkedList/Doubly_Linked_List/Doubly_Linked_List_MENU.c.obj: C_COMPILER__DoublyLL_Debug D$:/C$ Practice/Practice/LinkedList/Doubly$ Linked$ List/Doubly$ Linked$ List$ MENU.c || cmake_object_order_depends_target_DoublyLL
+  DEP_FILE = CMakeFiles\DoublyLL.dir\LinkedList\Doubly_Linked_List\Doubly_Linked_List_MENU.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\DoublyLL.dir
+  OBJECT_FILE_DIR = CMakeFiles\DoublyLL.dir\LinkedList\Doubly_Linked_List
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DoublyLL
+
+
+#############################################
+# Link the executable DoublyLL.exe
+
+build DoublyLL.exe: C_EXECUTABLE_LINKER__DoublyLL_Debug CMakeFiles/DoublyLL.dir/LinkedList/Doubly_Linked_List/Doubly_Linked_List_MENU.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\DoublyLL.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = DoublyLL.exe
+  TARGET_IMPLIB = libDoublyLL.dll.a
+  TARGET_PDB = DoublyLL.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target SimpleBinaryTree
 
 
@@ -165,11 +594,37 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build ArrayImplement: phony ArrayImplement.exe
+
 build BST: phony BST.exe
+
+build CircularQueue: phony CircularQueue.exe
+
+build DoublyLL: phony DoublyLL.exe
+
+build Fibonacci: phony Fibonacci.exe
+
+build LLImplement: phony LLImplement.exe
+
+build Main: phony Main.exe
+
+build ProcessorMENU: phony ProcessorMENU.exe
+
+build QueueArrayMENU: phony QueueArrayMENU.exe
+
+build QueueLLMENU: phony QueueLLMENU.exe
 
 build SimpleBinaryTree: phony SimpleBinaryTree.exe
 
 build SimpleGraph: phony SimpleGraph.exe
+
+build StackImplementLL: phony StackImplementLL.exe
+
+build StackImplementMenu: phony StackImplementMenu.exe
+
+build Table: phony Table.exe
+
+build reverseArray: phony reverseArray.exe
 
 # =============================================================================
 # Folder targets.
@@ -179,7 +634,7 @@ build SimpleGraph: phony SimpleGraph.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony SimpleBinaryTree.exe SimpleGraph.exe BST.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe SimpleGraph.exe BST.exe
 
 # =============================================================================
 # Built-in targets
