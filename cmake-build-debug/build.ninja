@@ -239,6 +239,72 @@ build LLImplement.exe: C_EXECUTABLE_LINKER__LLImplement_Debug CMakeFiles/LLImple
   TARGET_PDB = LLImplement.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target InsertNth
+
+
+#############################################
+# Order-only phony target for InsertNth
+
+build cmake_object_order_depends_target_InsertNth: phony || CMakeFiles/InsertNth.dir
+
+build CMakeFiles/InsertNth.dir/LinkedList/Singly_Linked_List/Lab/Insert_Nth/Menu.c.obj: C_COMPILER__InsertNth_Debug D$:/C$ Practice/Practice/LinkedList/Singly$ Linked$ List/Lab/Insert$ Nth/Menu.c || cmake_object_order_depends_target_InsertNth
+  DEP_FILE = CMakeFiles\InsertNth.dir\LinkedList\Singly_Linked_List\Lab\Insert_Nth\Menu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\InsertNth.dir
+  OBJECT_FILE_DIR = CMakeFiles\InsertNth.dir\LinkedList\Singly_Linked_List\Lab\Insert_Nth
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target InsertNth
+
+
+#############################################
+# Link the executable InsertNth.exe
+
+build InsertNth.exe: C_EXECUTABLE_LINKER__InsertNth_Debug CMakeFiles/InsertNth.dir/LinkedList/Singly_Linked_List/Lab/Insert_Nth/Menu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\InsertNth.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = InsertNth.exe
+  TARGET_IMPLIB = libInsertNth.dll.a
+  TARGET_PDB = InsertNth.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PairWiseSwap
+
+
+#############################################
+# Order-only phony target for PairWiseSwap
+
+build cmake_object_order_depends_target_PairWiseSwap: phony || CMakeFiles/PairWiseSwap.dir
+
+build CMakeFiles/PairWiseSwap.dir/LinkedList/Singly_Linked_List/Lab/Pair_Wise_Swap/Menu.c.obj: C_COMPILER__PairWiseSwap_Debug D$:/C$ Practice/Practice/LinkedList/Singly$ Linked$ List/Lab/Pair$ Wise$ Swap/Menu.c || cmake_object_order_depends_target_PairWiseSwap
+  DEP_FILE = CMakeFiles\PairWiseSwap.dir\LinkedList\Singly_Linked_List\Lab\Pair_Wise_Swap\Menu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\PairWiseSwap.dir
+  OBJECT_FILE_DIR = CMakeFiles\PairWiseSwap.dir\LinkedList\Singly_Linked_List\Lab\Pair_Wise_Swap
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PairWiseSwap
+
+
+#############################################
+# Link the executable PairWiseSwap.exe
+
+build PairWiseSwap.exe: C_EXECUTABLE_LINKER__PairWiseSwap_Debug CMakeFiles/PairWiseSwap.dir/LinkedList/Singly_Linked_List/Lab/Pair_Wise_Swap/Menu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\PairWiseSwap.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PairWiseSwap.exe
+  TARGET_IMPLIB = libPairWiseSwap.dll.a
+  TARGET_PDB = PairWiseSwap.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target StackImplementMenu
 
 
@@ -503,6 +569,39 @@ build SimpleBinaryTree.exe: C_EXECUTABLE_LINKER__SimpleBinaryTree_Debug CMakeFil
   TARGET_PDB = SimpleBinaryTree.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Polynomial
+
+
+#############################################
+# Order-only phony target for Polynomial
+
+build cmake_object_order_depends_target_Polynomial: phony || CMakeFiles/Polynomial.dir
+
+build CMakeFiles/Polynomial.dir/LinkedList/Add_Polynomials/Main.c.obj: C_COMPILER__Polynomial_Debug D$:/C$ Practice/Practice/LinkedList/Add$ Polynomials/Main.c || cmake_object_order_depends_target_Polynomial
+  DEP_FILE = CMakeFiles\Polynomial.dir\LinkedList\Add_Polynomials\Main.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Polynomial.dir
+  OBJECT_FILE_DIR = CMakeFiles\Polynomial.dir\LinkedList\Add_Polynomials
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Polynomial
+
+
+#############################################
+# Link the executable Polynomial.exe
+
+build Polynomial.exe: C_EXECUTABLE_LINKER__Polynomial_Debug CMakeFiles/Polynomial.dir/LinkedList/Add_Polynomials/Main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Polynomial.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Polynomial.exe
+  TARGET_IMPLIB = libPolynomial.dll.a
+  TARGET_PDB = Polynomial.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target SimpleGraph
 
 
@@ -604,9 +703,15 @@ build DoublyLL: phony DoublyLL.exe
 
 build Fibonacci: phony Fibonacci.exe
 
+build InsertNth: phony InsertNth.exe
+
 build LLImplement: phony LLImplement.exe
 
 build Main: phony Main.exe
+
+build PairWiseSwap: phony PairWiseSwap.exe
+
+build Polynomial: phony Polynomial.exe
 
 build ProcessorMENU: phony ProcessorMENU.exe
 
@@ -634,7 +739,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe SimpleGraph.exe BST.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe InsertNth.exe PairWiseSwap.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe SimpleGraph.exe BST.exe
 
 # =============================================================================
 # Built-in targets

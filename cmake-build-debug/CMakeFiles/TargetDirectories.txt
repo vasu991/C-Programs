@@ -4,6 +4,8 @@ D:/C Practice/Practice/cmake-build-debug/CMakeFiles/Fibonacci.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/reverseArray.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/ArrayImplement.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/LLImplement.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/InsertNth.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/PairWiseSwap.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementMenu.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementLL.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/QueueArrayMENU.dir
@@ -12,6 +14,7 @@ D:/C Practice/Practice/cmake-build-debug/CMakeFiles/CircularQueue.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/ProcessorMENU.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/DoublyLL.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/SimpleBinaryTree.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/Polynomial.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/SimpleGraph.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/BST.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
