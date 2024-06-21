@@ -19,6 +19,7 @@ List* createList() {
 
 Node* createNode() {
     Node* node = (Node*)malloc(sizeof(Node));
+    node->next = NULL;
     return node;
 }
 void append(Node** left, Node** right, int info)
@@ -38,21 +39,24 @@ void append(Node** left, Node** right, int info)
     (*right)->next = new_node;
     *right = new_node;
 }
-void swap(int* a, int* b)
-{
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
-}
+void pairWiseSwap(Node** head) {
+    if (*head == NULL || (*head)->next == NULL)
+        return;
 
-void pairWiseSwap(Node* head)
-{
-    Node* temp = head;
+    Node* prev = *head;
+    Node* curr = (*head)->next;
+    *head = curr;
 
-    while (temp != NULL && temp->next != NULL) {
-        swap(&temp->info, &temp->next->info);
-        temp = temp->next->next;
+    while (1) {
+        Node* next = curr->next;
+        curr->next = prev;
+        if (next == NULL || next->next == NULL) {
+            prev->next = next;
+            break;
+        }
+        prev->next = next->next;
+        prev = next;
+        curr = prev->next;
     }
 }
 

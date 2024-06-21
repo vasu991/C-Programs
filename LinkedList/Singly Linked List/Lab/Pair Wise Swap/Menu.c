@@ -22,7 +22,7 @@ int main() {
                 printList(list->start);
             } break;
             case 3: {
-                pairWiseSwap(list->start);
+                pairWiseSwap(&list->start);
                 break;
             }
             case 4: {

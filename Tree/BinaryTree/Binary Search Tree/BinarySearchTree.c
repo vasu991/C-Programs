@@ -44,12 +44,45 @@ void insertBST(Node** root, int key) {
     }
 }
 
+int findMinimum(Node* root) {
+    if (root == NULL) {
+        printf("The tree is empty.\n");
+        return -1; // Or handle the empty tree case as needed
+    }
+
+    Node* current = root;
+    while (current->left != NULL) {
+        current = current->left;
+    }
+    return current->info;
+}
+
 int countNodes(Node* root){
     if (root == NULL)
         return 0;
     return 1 + countNodes(root->left) + countNodes(root->right);
 }
 
+int countNodesOnRight(Node* root) {
+    if (root == NULL || root->right == NULL) {
+        return 0;
+    }
+    return countNodes(root->right);
+}
+
+int countNodesWithBothChildren(Node* root) {
+    if (root == NULL) {
+        return 0;
+    }
+
+    int count = 0;
+    if (root->left != NULL && root->right != NULL) {
+        count = 1;
+    }
+
+    return count + countNodesWithBothChildren(root->left)
+    + countNodesWithBothChildren(root->right);
+}
 void print2DUtil(Node* root, int space)
 {
     if (root == NULL)
@@ -66,7 +99,7 @@ void print2DUtil(Node* root, int space)
 
     print2DUtil(root->left, space);
 }
-void print2D(struct Node* root)
+void print2D(Node* root)
 {
     print2DUtil(root, 0);
 }

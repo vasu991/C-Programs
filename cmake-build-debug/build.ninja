@@ -305,6 +305,72 @@ build PairWiseSwap.exe: C_EXECUTABLE_LINKER__PairWiseSwap_Debug CMakeFiles/PairW
   TARGET_PDB = PairWiseSwap.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target TraverseMdeleteN
+
+
+#############################################
+# Order-only phony target for TraverseMdeleteN
+
+build cmake_object_order_depends_target_TraverseMdeleteN: phony || CMakeFiles/TraverseMdeleteN.dir
+
+build CMakeFiles/TraverseMdeleteN.dir/LinkedList/Doubly_Linked_List/Lab/TraverseM_DeleteN/Menu.c.obj: C_COMPILER__TraverseMdeleteN_Debug D$:/C$ Practice/Practice/LinkedList/Doubly$ Linked$ List/Lab/TraverseM$ DeleteN/Menu.c || cmake_object_order_depends_target_TraverseMdeleteN
+  DEP_FILE = CMakeFiles\TraverseMdeleteN.dir\LinkedList\Doubly_Linked_List\Lab\TraverseM_DeleteN\Menu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\TraverseMdeleteN.dir
+  OBJECT_FILE_DIR = CMakeFiles\TraverseMdeleteN.dir\LinkedList\Doubly_Linked_List\Lab\TraverseM_DeleteN
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TraverseMdeleteN
+
+
+#############################################
+# Link the executable TraverseMdeleteN.exe
+
+build TraverseMdeleteN.exe: C_EXECUTABLE_LINKER__TraverseMdeleteN_Debug CMakeFiles/TraverseMdeleteN.dir/LinkedList/Doubly_Linked_List/Lab/TraverseM_DeleteN/Menu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\TraverseMdeleteN.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = TraverseMdeleteN.exe
+  TARGET_IMPLIB = libTraverseMdeleteN.dll.a
+  TARGET_PDB = TraverseMdeleteN.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SplitList
+
+
+#############################################
+# Order-only phony target for SplitList
+
+build cmake_object_order_depends_target_SplitList: phony || CMakeFiles/SplitList.dir
+
+build CMakeFiles/SplitList.dir/LinkedList/Singly_Linked_List/Lab/Split_List/Menu.c.obj: C_COMPILER__SplitList_Debug D$:/C$ Practice/Practice/LinkedList/Singly$ Linked$ List/Lab/Split$ List/Menu.c || cmake_object_order_depends_target_SplitList
+  DEP_FILE = CMakeFiles\SplitList.dir\LinkedList\Singly_Linked_List\Lab\Split_List\Menu.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\SplitList.dir
+  OBJECT_FILE_DIR = CMakeFiles\SplitList.dir\LinkedList\Singly_Linked_List\Lab\Split_List
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SplitList
+
+
+#############################################
+# Link the executable SplitList.exe
+
+build SplitList.exe: C_EXECUTABLE_LINKER__SplitList_Debug CMakeFiles/SplitList.dir/LinkedList/Singly_Linked_List/Lab/Split_List/Menu.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\SplitList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = SplitList.exe
+  TARGET_IMPLIB = libSplitList.dll.a
+  TARGET_PDB = SplitList.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target StackImplementMenu
 
 
@@ -723,11 +789,15 @@ build SimpleBinaryTree: phony SimpleBinaryTree.exe
 
 build SimpleGraph: phony SimpleGraph.exe
 
+build SplitList: phony SplitList.exe
+
 build StackImplementLL: phony StackImplementLL.exe
 
 build StackImplementMenu: phony StackImplementMenu.exe
 
 build Table: phony Table.exe
+
+build TraverseMdeleteN: phony TraverseMdeleteN.exe
 
 build reverseArray: phony reverseArray.exe
 
@@ -739,7 +809,7 @@ build reverseArray: phony reverseArray.exe
 #############################################
 # Folder: D:/C Practice/Practice/cmake-build-debug
 
-build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe InsertNth.exe PairWiseSwap.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe SimpleGraph.exe BST.exe
+build all: phony Main.exe Table.exe Fibonacci.exe reverseArray.exe ArrayImplement.exe LLImplement.exe InsertNth.exe PairWiseSwap.exe TraverseMdeleteN.exe SplitList.exe StackImplementMenu.exe StackImplementLL.exe QueueArrayMENU.exe QueueLLMENU.exe CircularQueue.exe ProcessorMENU.exe DoublyLL.exe SimpleBinaryTree.exe Polynomial.exe SimpleGraph.exe BST.exe
 
 # =============================================================================
 # Built-in targets

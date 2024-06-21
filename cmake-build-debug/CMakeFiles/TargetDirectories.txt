@@ -6,6 +6,8 @@ D:/C Practice/Practice/cmake-build-debug/CMakeFiles/ArrayImplement.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/LLImplement.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/InsertNth.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/PairWiseSwap.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/TraverseMdeleteN.dir
+D:/C Practice/Practice/cmake-build-debug/CMakeFiles/SplitList.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementMenu.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/StackImplementLL.dir
 D:/C Practice/Practice/cmake-build-debug/CMakeFiles/QueueArrayMENU.dir
